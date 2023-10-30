@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UniPass</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="register_activity">Register Activity</string>
+    <string name="login_activity">Login activity</string>
+    <string name="email">email</string>
+    <string name="your_name">Your name</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="register">Register</string>
+    <string name="log_out">Log out</string>
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    <string name="home_fragment">HomeFragment</string>
+    <string name="generator_fragment">GeneratorFragment</string>
+    <string name="profile_fragment">ProfileFragment</string>
+    <string name="settings_fragment">SettingsFragment</string>
+</resources>

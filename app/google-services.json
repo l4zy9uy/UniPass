@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "687296267840",
+    "firebase_url": "https://password-manager-2a7e5-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "password-manager-2a7e5",
+    "storage_bucket": "password-manager-2a7e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687296267840:android:4da2de92d0ac83b25001a5",
+        "android_client_info": {
+          "package_name": "com.example.unipass"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlxwDGabeGx5Sg3rFcDROthvmY33_B1qI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
