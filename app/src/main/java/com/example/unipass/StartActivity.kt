@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -18,15 +19,14 @@ class StartActivity : AppCompatActivity() {
     private lateinit var username: EditText
     private lateinit var password: EditText
 
-    private lateinit var auth: FirebaseAuth
-
     public override fun onStart() {
         super.onStart()
-
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
+
+        var viewModel = ViewModelProvider(this).get(StartActivityViewModel::class.java)
 
         // Write a message to the database
         val database = Firebase.database
@@ -38,7 +38,6 @@ class StartActivity : AppCompatActivity() {
         password = findViewById(R.id.master_password_input)
         login = findViewById(R.id.login_button)
 
-        auth = FirebaseAuth.getInstance()
         register = findViewById(R.id.register_option)
 
         // Set the onClickListener for both the login button and the register TextView
@@ -55,16 +54,6 @@ class StartActivity : AppCompatActivity() {
     }
 
     private fun loginUser(username: String, password: String) {
-        auth.signInWithEmailAndPassword(username, password).addOnCompleteListener(this) { task ->
-            if (task.isSuccessful) {
-                Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            } else {
-                Toast.makeText(baseContext, "Login failed.", Toast.LENGTH_SHORT)
-                    .show()
-            }
-        }
+
     }
 }

@@ -17,4 +17,10 @@
     <string name="generator_fragment">GeneratorFragment</string>
     <string name="profile_fragment">ProfileFragment</string>
     <string name="settings_fragment">SettingsFragment</string>
+    <string name="lowercase_alphabets">Lowercase Alphabets</string>
+    <string name="numbers">Numbers</string>
+    <string name="password_length_7">Password Length: 7</string>
+    <string name="symbols">Symbols</string>
+    <string name="uppercase_alphabets">Uppercase Alphabets</string>
+    <string name="generate">Generate</string>
 </resources>
