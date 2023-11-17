@@ -41,7 +41,7 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
             calendar.get(Calendar.MINUTE),
             calendar.get(Calendar.SECOND)
         )
-        return User(name, email, hashedPassword.toHex(), salt.toHex(), creationDate.toString())
+        return User(0, name, email, hashedPassword.toHex(), salt.toHex(), creationDate.toString())
     }
     private fun hashPassword(password: String, salt: ByteArray) : ByteArray {
         val spec = PBEKeySpec(password.toCharArray(), salt, 65536, 128)
